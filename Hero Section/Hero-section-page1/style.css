@@ -19,7 +19,7 @@ body{
   position: relative;
   box-sizing: border-box;
   height: 46vw;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -261,7 +261,7 @@ body{
 .city-selection-list {
   position: absolute;
   top: 38vw;
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
