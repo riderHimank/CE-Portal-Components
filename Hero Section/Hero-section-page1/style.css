@@ -190,7 +190,7 @@ body{
   display: flex;
   justify-content: space-around;
   width: 95vw;
-  margin-bottom: 10vw;
+  margin-top: 8vw;
 }
 
 .highway-to-alcher-image {
@@ -221,9 +221,9 @@ body{
     z-index: -2;
     top: 2.5vw;
     left: 2.5vw;
-    -webkit-animation: spin 10s linear infinite;
+    /* -webkit-animation: spin 10s linear infinite;
     -moz-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite; */
     border-radius: 50%;
     border: 1vw dashed #d9cebb;
     box-sizing: border-box;
@@ -246,16 +246,16 @@ body{
 
 .monuments-icon {
     position: absolute;
-    z-index: -2;
-    top: -12.5vw;
-    left: -10vw;
+    z-index: -4;
+    top: -12vw;
+    left: -12vw;
     /* top: -10.5vw;
     left:-10.5vw; */
-    width: 81vw;
-    height: 81vw;
-    /* -webkit-animation: spin 5s linear infinite;
-    -moz-animation: spin 5s linear infinite;
-    animation: spin 5s linear infinite; */
+    width: 85vw;
+    height: 85vw;
+    -webkit-animation: cspin 12s ease-in-out infinite;
+    -moz-animation: cspin 12s ease-in-out infinite;
+    animation: cspin 12s ease-in-out infinite;
 }
 
 .city-selection-list {
@@ -346,16 +346,49 @@ body{
 
 /* Spin animation */
 
-@-webkit-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@-webkit-keyframes cspin{
+  0% {
+      transform: rotate(0)
+  }
+  25% {
+      transform: rotate(180deg)
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(0)
+  }
 }
 
-@-moz-keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@-moz-keyframes cspin{
+  0% {
+      transform: rotate(0)
+  }
+  25% {
+      transform: rotate(180deg)
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(0)
+  }
 }
 
-@keyframes spin{
-  100%{-webkit-transform: rotate(360deg);}
+@keyframes cspin{
+  0% {
+      transform: rotate(0)
+  }
+  25% {
+      transform: rotate(180deg)
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(0)
+  }
 }
 
 /* media query for main-hero-section */
