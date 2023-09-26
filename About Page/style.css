@@ -1,0 +1,360 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: "Gotu", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container1 {
+  width: 100%;
+  height: auto;
+  background-image: url(public/bg.png);
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  width: 95%;
+  height: auto;
+  padding: 5vh;
+  background-color: #333569;
+  border-width: 1vh;
+  border-color: #47497d;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  margin-right: 6.5vh;
+  margin-left: 6.5vh;
+  padding: 5vh;
+  width: 87vh;
+  height: auto;
+  aspect-ratio: 19/15;
+  background-image: url(public/LEFT-BOX.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  margin-left: 6.5vh;
+  margin-right: 6.5vh;
+  padding: 5vh;
+  width: 87vh;
+  height: auto;
+  aspect-ratio: 19/15;
+  background-image: url(public/RIGHT-BOX.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.RightHeading,
+.LeftHeading {
+  width: 100%;
+  font-size: 2.7rem;
+  font-weight: 500;
+  padding: 2.5vh 0vh;
+  word-wrap: normal;
+  text-align: center;
+}
+.LeftText,
+.RightText {
+  width: 100%;
+  text-align: center;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  padding: 2.5vh 0vh;
+  font-family: "Karla", sans-serif;
+  word-wrap: normal;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.LeftHeading {
+  margin-top: -15vh;
+}
+.LeftText {
+  margin-top: -5vh;
+}
+.RightHeading {
+  margin-top: 15vh;
+}
+.RightText {
+  margin-top: -5vh;
+}
+
+/* Responisve */
+
+/* Media query for medium screens */
+@media screen and (max-width: 1250px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 2rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.9rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.7rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 1064px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.6rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.65rem;
+  }
+  .LeftHeading {
+    margin-top: -30%;
+    margin-bottom: 1.5%;
+  }
+  .RightHeading {
+    margin-top: 18%;
+    margin-bottom: 1.5%;
+  }
+}
+@media screen and (max-width: 985px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.45rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.55rem;
+  }
+}
+@media screen and (max-width: 921px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.25rem;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 830px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 780px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.4rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 700px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.35rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 645px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.65rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.27rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+}
+@media screen and (max-width: 700px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.35rem;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 645px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.6rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.25rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box1,
+  .box2 {
+    width: 45%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+
+  .LeftHeading,
+  .RightHeading {
+    font-size: 0.55rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+
+  .LeftText,
+  .RightText {
+    font-size: 0.23rem;
+    font-weight: 500;
+    padding: 2.5vh 0vh;
+  }
+}
+
